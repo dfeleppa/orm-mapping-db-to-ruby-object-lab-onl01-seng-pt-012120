@@ -90,7 +90,8 @@ class Student
   
   def self.first_student_in_grade_10
     student = self.first_X_students_in_grade_10(1).flatten
-    self.new_from_db(student)
+    student.id
+    # self.new_from_db(student)
   end
   
   def self.all_students_in_grade_X(grade)
